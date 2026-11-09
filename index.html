@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>老婆仔 生日快樂 · Happy Birthday</title>
-<meta name="description" content="身體健康，屋企人錫我 · Good health, and a family that loves you.">
+<title>老婆仔 生日快樂</title>
+<meta name="description" content="身體健康，屋企人錫我">
 <meta property="og:type" content="website">
-<meta property="og:title" content="老婆仔 生日快樂 · Happy Birthday">
-<meta property="og:description" content="身體健康，屋企人錫我 · Good health, and a family that loves you.">
+<meta property="og:title" content="老婆仔 生日快樂">
+<meta property="og:description" content="身體健康，屋企人錫我">
 <meta property="og:image" content="https://noctis-owl.github.io/jennie-birthday-card/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --night-1:#05070c;
@@ -111,13 +111,11 @@
 
   .eyebrow{
     margin:0 0 14px;
-    font-family:"Cormorant Garamond",serif;
-    font-size:clamp(12px,2.6vw,15px);
+    font-family:"Noto Serif TC",serif;
+    font-size:clamp(13px,2.8vw,16px);
     letter-spacing:.44em;
-    text-transform:uppercase;
     color:rgba(233,199,102,.86);
   }
-  .eyebrow .sep{opacity:.45;margin:0 .5em}
 
   h1.name{
     margin:0;
@@ -137,11 +135,10 @@
 
   .sub{
     margin:10px 0 0;
-    font-family:"Cormorant Garamond",serif;
-    font-style:italic;
+    font-family:"Noto Serif TC",serif;
     font-weight:300;
-    font-size:clamp(17px,4.4vw,25px);
-    letter-spacing:.13em;
+    font-size:clamp(16px,4vw,22px);
+    letter-spacing:.18em;
     color:rgba(246,236,212,.86);
   }
 
@@ -165,21 +162,10 @@
     color:var(--gold-hi);
     text-shadow:0 0 24px rgba(233,199,102,.26);
   }
-  .wish-en{
-    margin:10px 0 0;
-    font-family:"Cormorant Garamond",serif;
-    font-style:italic;
-    font-weight:300;
-    font-size:clamp(14px,3.7vw,20px);
-    letter-spacing:.06em;
-    line-height:1.6;
-    color:rgba(246,236,212,.72);
-  }
   .sig{
     margin:26px 0 0;
-    font-size:clamp(11px,2.8vw,13px);
+    font-size:clamp(12px,3vw,14px);
     letter-spacing:.3em;
-    text-transform:uppercase;
     color:rgba(233,199,102,.55);
   }
 
@@ -319,27 +305,6 @@
     background:rgba(244,223,154,.3);transform:translateX(-50%);
   }
 
-  /* polaroid */
-  .polaroid{
-    display:inline-block;padding:12px 12px 0;
-    background:#fdf9f4;border-radius:5px;
-    box-shadow:0 18px 44px rgba(0,0,0,.5);
-    transform:rotate(-1.4deg);transition:transform .3s ease;
-  }
-  .polaroid:hover{transform:rotate(0deg) scale(1.02)}
-  .photo-slot{
-    position:relative;width:min(290px,62vw);height:min(290px,62vw);
-    background:#e9e2d8;display:grid;place-items:center;overflow:hidden;
-  }
-  .photo-slot img{width:100%;height:100%;object-fit:cover;display:block}
-  .photo-hint{font-size:13px;color:#7a6a5a;text-align:center;padding:18px;line-height:1.7}
-  .caption{
-    padding:12px 6px 14px;font-size:13.5px;color:#4a4038;text-align:center;
-    outline:none;min-height:44px;
-    font-family:"Noto Serif TC",serif;
-  }
-  .caption:focus{background:rgba(0,0,0,.04)}
-
   /* inputs */
   .field{
     display:block;width:100%;
@@ -353,22 +318,10 @@
   }
   .field:focus{border-color:rgba(244,223,154,.55);background:rgba(233,199,102,.10)}
   .field::placeholder{color:rgba(246,236,212,.35)}
-  .mini{
-    margin-top:12px;padding:10px 22px;
-    font-family:"Noto Serif TC",serif;font-size:13.5px;letter-spacing:.16em;
-    color:#241a06;border:0;border-radius:999px;cursor:pointer;
-    background:linear-gradient(100deg,var(--gold-2),var(--gold-1));
-    transition:transform .15s ease,opacity .15s ease;
-  }
-  .mini:hover{transform:translateY(-1px)}
-  .mini:active{transform:translateY(0)}
-  .note{margin:12px 0 0;font-size:12.5px;letter-spacing:.06em;color:rgba(246,236,212,.55);min-height:1.3em}
 
-  .secret-wrap{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-  .secret-wrap .field{max-width:230px}
-  .secret-msg{
-    margin:18px 0 0;font-size:15px;line-height:1.85;letter-spacing:.1em;
-    color:var(--gold-hi);min-height:1.5em;
+  .note{
+    margin:12px 0 0;font-size:12.5px;letter-spacing:.06em;
+    color:rgba(246,236,212,.55);min-height:1.3em;
   }
 
   .fireworks-btn{
@@ -408,9 +361,8 @@
 <canvas id="fx"></canvas>
 
 <div class="chips">
-  <button class="chip" id="musicBtn" type="button" aria-pressed="false"><span id="musicIco">♪</span><span data-i18n="music">音樂</span></button>
-  <button class="chip" id="langBtn" type="button"><span data-i18n="lang">EN</span></button>
-  <button class="chip" id="fxBtn" type="button" aria-pressed="true"><span data-i18n="fx">特效</span></button>
+  <button class="chip" id="musicBtn" type="button" aria-pressed="false"><span id="musicIco">♪</span><span>音樂</span></button>
+  <button class="chip" id="fxBtn" type="button" aria-pressed="true"><span>特效</span></button>
 </div>
 
 <div class="stage">
@@ -420,21 +372,20 @@
     <span class="corner tl"></span><span class="corner tr"></span>
     <span class="corner bl"></span><span class="corner br"></span>
 
-    <p class="eyebrow">Happy Birthday<span class="sep">·</span>生日快樂</p>
+    <p class="eyebrow">生日快樂</p>
     <h1 class="name">老婆仔</h1>
-    <p class="sub">To my dear wife</p>
+    <p class="sub">畀我嘅親愛老婆</p>
 
     <div class="rule"></div>
 
     <p class="wish">身體健康，屋企人錫我</p>
-    <p class="wish-en">Good health, and a family that loves you.</p>
 
-    <p class="sig">With all my love</p>
+    <p class="sig">永遠愛你</p>
   </main>
 
   <button class="share" id="share" type="button">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 15V3"/><path d="m8 7 4-4 4 4"/></svg>
-    分享 Share
+    分享
   </button>
   </div>
 
@@ -443,66 +394,31 @@
 
     <!-- wish balloons -->
     <section class="panel" id="balloonPanel">
-      <h2 data-i18n="balloonTitle">許願氣球</h2>
-      <p class="hint" data-i18n="balloonSub">每隻氣球入面有一句想同你講嘅說話。撳一下，佢就會爆開。</p>
+      <h2>許願氣球</h2>
+      <p class="hint">每隻氣球入面有一句想同你講嘅說話。撳一下，佢就會爆開。</p>
       <div class="balloon-field" id="balloonField"></div>
       <p class="note" id="balloonNote"></p>
     </section>
 
     <!-- wish tree -->
     <section class="panel" id="treePanel">
-      <h2 data-i18n="treeTitle">許願樹</h2>
-      <p class="hint" data-i18n="treeSub">一盞一盞撳著佢，每盞燈籠都係一個可以喺腦入面答嘅問題。</p>
+      <h2>許願樹</h2>
+      <p class="hint">一盞一盞撳著佢，每盞燈籠都係一個可以喺腦入面答嘅問題。</p>
       <div class="lanterns" id="lanterns"></div>
-    </section>
-
-    <!-- photo -->
-    <section class="panel" id="photoPanel">
-      <h2 data-i18n="photoTitle">相片</h2>
-      <p class="hint" data-i18n="photoSub">呢個位會擺住一張相，畀所有睇呢頁嘅人見到。</p>
-      <div class="polaroid">
-        <div class="photo-slot">
-          <span class="photo-hint" data-i18n="photoHint">相片會出現喺呢度 📷</span>
-          <img id="photoImg" alt="" hidden>
-        </div>
-        <div class="caption" id="photoCaption" contenteditable="true" spellcheck="false"
-             data-i18n="photoCaption">喺相下面寫句說話</div>
-      </div>
-    </section>
-
-    <!-- letter -->
-    <section class="panel" id="letterPanel">
-      <h2 data-i18n="letterTitle">寫俾將來的自己</h2>
-      <p class="hint" data-i18n="letterSub">寫低一封只有你會再讀到嘅信。儲咗喺你部機，唔會send去任何地方。</p>
-      <textarea id="letter" class="field" rows="5"
-        placeholder="今年想完成嘅事？想感謝邊個？想放低啲咩？"></textarea>
-      <button class="mini" id="letterSave" type="button" data-i18n="save">儲存</button>
-      <p class="note" id="letterNote"></p>
-    </section>
-
-    <!-- secret -->
-    <section class="panel" id="secretPanel">
-      <h2 data-i18n="secretTitle">秘密訊息</h2>
-      <p class="hint" data-i18n="secretSub">有一句想留低俾你嘅話，要估中密碼先開到。</p>
-      <div class="secret-wrap">
-        <input type="password" id="secretInput" class="field" placeholder="密碼" autocomplete="off">
-        <button class="mini" id="secretBtn" type="button" data-i18n="unlock">開</button>
-      </div>
-      <p class="secret-msg" id="secretMsg"></p>
     </section>
 
     <!-- fireworks -->
     <section class="panel" id="finalePanel">
-      <h2 data-i18n="finaleTitle">最後一件事</h2>
-      <p class="hint" data-i18n="finaleSub">撳一下，送多一場流星煙花。</p>
+      <h2>最後一件事</h2>
+      <p class="hint">撳一下，送多一場流星煙花。</p>
       <button class="fireworks-btn" id="finaleBtn" type="button">
-        <span data-i18n="fireworks">放煙花</span> ✦
+        <span>放煙花</span> ✦
       </button>
     </section>
 
   </div>
 
-  <p class="foot" data-i18n="foot">✦</p>
+  <p class="foot">✦ 冇廣告、冇追蹤、冇上傳任何嘢</p>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -513,112 +429,39 @@
      Settings — everything editable sits here
      ============================================================ */
   var SETTINGS = {
-    lang: 'zh',
-    secretPass: 'birthday',
-    secretMessage: {
-      zh: '🎂 有人想你今日好快樂。多謝你一直喺度。',
-      en: '🎂 Someone is really glad you were born. Thank you for being here.'
-    },
-    photo: '',              /* set to 'assets/photo.jpg' once the photo is chosen */
-    photoAlt: '',
-    wishMessages: {
-      zh: ['願望已送出 ✦','宇宙收到你嘅願望…','啲蠟燭著咗 🎂','祝你今年乜都順順利利 ✨','再撳一次，多一個願望 🌟'],
-      en: ['Wish granted ✦','Sending it to the universe…','The candles are lit 🎂','May everything go your way ✨','Tap again for another wish 🌟']
-    },
-    balloonWishes: {
-      zh: [
-        '你一直照顧人，而家輪到大家照顧你',
-        '辛苦晒，記得抖下先再繼續捱',
-        '你值得所有好嘅事，唔止生日嗰日',
-        '唔使做咗完美先值得被愛',
-        '同你講聲：做得好好哋，你真係好叻',
-        '今年唔求快，只求穩',
-        '願你身體健康，其他唔使太執著',
-        '多啲笑聲，少啲擔心',
-        '你嘅耐性，係你最厲害嘅武器',
-        '慢慢嚟，你已經做得好緊要',
-        '希望你今日可以早啲瞓',
-        '有人記住你今日生日，就係最靚嘅禮物'
-      ],
-      en: [
-        'You take care of everyone — let others take care of you today',
-        "You've worked hard. Rest, then keep going.",
-        'You deserve good things, not just on birthdays',
-        "You don't have to be perfect to be loved",
-        'Well done. You are genuinely good at this.',
-        'This year, less rush and more steady',
-        'Health first. The rest can wait.',
-        'More laughs, fewer worries',
-        'Your patience is your sharpest tool',
-        "Slow down. You've already done enough.",
-        'I hope you sleep well tonight',
-        'Someone remembering today is the best gift'
-      ]
-    },
-    lanternWishes: {
-      zh: [
-        '今年想完成嘅事',
-        '最想感謝嘅人',
-        '最想改變嘅習慣',
-        '最想去嘅地方',
-        '最想學嘅新嘢',
-        '最想放低嘅負擔',
-        '最想留低嘅回憶',
-        '最想對自己講嘅說話',
-        '最想保護嘅人',
-        '最想做到嘅事',
-        '最想放鬆嘅一刻',
-        '最想相信嘅自己'
-      ],
-      en: [
-        'Something to finish this year',
-        'Someone to thank',
-        'A habit to change',
-        'A place to go',
-        'A new skill',
-        'A weight to set down',
-        'A memory to keep',
-        'Something to tell yourself',
-        'Someone to protect',
-        'Something to achieve',
-        'A moment of peace',
-        'The self you believe in'
-      ]
-    }
+    wishMessages: [
+      '願望已送出 ✦','宇宙收到你嘅願望…','啲蠟燭著咗 🎂','祝你今年乜都順順利利 ✨','再撳一次，多一個願望 🌟'
+    ],
+    balloonWishes: [
+      '你一直照顧人，而家輪到大家照顧你',
+      '辛苦晒，記得抖下先再繼續捱',
+      '你值得所有好嘅事，唔止生日嗰日',
+      '唔使做咗完美先值得被愛',
+      '同你講聲：做得好好哋，你真係好叻',
+      '今年唔求快，只求穩',
+      '願你身體健康，其他唔使太執著',
+      '多啲笑聲，少啲擔心',
+      '你嘅耐性，係你最厲害嘅武器',
+      '慢慢嚟，你已經做得好緊要',
+      '希望你今日可以早啲瞓',
+      '有人記住你今日生日，就係最靚嘅禮物'
+    ],
+    lanternWishes: [
+      '今年想完成嘅事',
+      '最想感謝嘅人',
+      '最想改變嘅習慣',
+      '最想去嘅地方',
+      '最想學嘅新嘢',
+      '最想放低嘅負擔',
+      '最想留低嘅回憶',
+      '最想對自己講嘅說話',
+      '最想保護嘅人',
+      '最想做到嘅事',
+      '最想放鬆嘅一刻',
+      '最想相信嘅自己'
+    ]
   };
 
-  var I18N = {
-    zh: {
-      music:'音樂', lang:'EN', fx:'特效',
-      balloonTitle:'許願氣球', balloonSub:'每隻氣球入面有一句想同你講嘅說話。撳一下，佢就會爆開。',
-      treeTitle:'許願樹', treeSub:'一盞一盞撳著佢，每盞燈籠都係一個可以喺腦入面答嘅問題。',
-      photoTitle:'相片', photoSub:'呢個位會擺住一張相，畀所有睇呢頁嘅人見到。',
-      photoHint:'相片會出現喺呢度 📷', photoCaption:'喺相下面寫句說話',
-      letterTitle:'寫俾將來的自己', letterSub:'寫低一封只有你會再讀到嘅信。儲咗喺你部機，唔會send去任何地方。',
-      save:'儲存',
-      secretTitle:'秘密訊息', secretSub:'有一句想留低俾你嘅話，要估中密碼先開到。', unlock:'開',
-      finaleTitle:'最後一件事', finaleSub:'撳一下，送多一場流星煙花。', fireworks:'放煙花',
-      foot:'✦ 冇廣告、冇追蹤、冇上傳任何嘢',
-      saved:'儲存咗 ✓ 關咗呢個分頁都仲喺度',
-      wrongPass:'密碼唔啱，再試多次？'
-    },
-    en: {
-      music:'Music', lang:'中文', fx:'Effects',
-      balloonTitle:'Wish balloons', balloonSub:'Each balloon holds a line I want to say to you. Tap one and it pops.',
-      treeTitle:'Wish tree', treeSub:'Light them one by one. Each lantern is a question to answer in your head.',
-      photoTitle:'Photo', photoSub:'A photo will sit here, for everyone who opens this page.',
-      photoHint:'A photo will appear here 📷', photoCaption:'Write a line under the photo',
-      letterTitle:'A letter to future you', letterSub:'Something only you will read again. It stays on your own device — nothing is uploaded.',
-      save:'Save',
-      secretTitle:'Secret message', secretSub:'A line I want to leave you. Guess the password to open it.', unlock:'Open',
-      finaleTitle:'One last thing', finaleSub:'Tap for one more round of meteor fireworks.', fireworks:'Fireworks',
-      foot:'✦ no ads, no tracking, nothing uploaded',
-      saved:'Saved ✓ it will still be here next time',
-      wrongPass:'Not quite. Try again?'
-    }
-  };
-
-  var lang = SETTINGS.lang;
   var fxOn = true;
   var $ = function(s){ return document.querySelector(s); };
   var $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
@@ -924,29 +767,13 @@
   }
 
   /* ============================================================
-     i18n
-     ============================================================ */
-  function applyLang(){
-    var t=I18N[lang];
-    $$('[data-i18n]').forEach(function(el){
-      var k=el.getAttribute('data-i18n');
-      if(t[k]!==undefined) el.textContent=t[k];
-    });
-    $('#langBtn').firstElementChild.textContent=t.lang;
-    var msg=$('#secretMsg');
-    if(msg.dataset.unlocked==='1') msg.textContent=SETTINGS.secretMessage[lang];
-    var cap=$('#photoCaption');
-    if(cap.dataset.custom!=='1') cap.textContent=t.photoCaption;
-  }
-
-  /* ============================================================
      Wish balloons
      ============================================================ */
   var GOLD_BALLOONS=['#f4df9a','#e9c766','#fff6d8','#c99b3c','#f0d9a8','#dcc07a'];
   function buildBalloons(){
     var host=$('#balloonField');
     host.innerHTML='';
-    var wishes=SETTINGS.balloonWishes[lang].slice();
+    var wishes=SETTINGS.balloonWishes.slice();
     wishes.sort(function(){return Math.random()-0.5;});
     wishes.forEach(function(w,i){
       var b=document.createElement('button');
@@ -974,7 +801,7 @@
   function buildLanterns(){
     var host=$('#lanterns');
     host.innerHTML='';
-    var wishes=SETTINGS.lanternWishes[lang].slice();
+    var wishes=SETTINGS.lanternWishes.slice();
     wishes.sort(function(){return Math.random()-0.5;});
     wishes.forEach(function(w){
       var l=document.createElement('button');
@@ -986,63 +813,6 @@
       host.appendChild(l);
     });
   }
-
-  /* ============================================================
-     Photo (baked in by the author) + caption
-     ============================================================ */
-  (function(){
-    var img=$('#photoImg'), cap=$('#photoCaption'), hint=$('.photo-hint');
-    if(SETTINGS.photo){
-      img.src=SETTINGS.photo;
-      img.alt=SETTINGS.photoAlt||'';
-      img.hidden=false;
-      if(hint) hint.style.display='none';
-    }
-    var saved=storeGet('bday.caption',null);
-    if(saved){ cap.textContent=saved; cap.dataset.custom='1'; }
-    cap.addEventListener('input',function(){
-      cap.dataset.custom='1';
-      storeSet('bday.caption',cap.textContent);
-    });
-  })();
-
-  /* ============================================================
-     Letter
-     ============================================================ */
-  (function(){
-    var ta=$('#letter'), btn=$('#letterSave'), note=$('#letterNote');
-    var saved=storeGet('bday.letter','');
-    if(saved) ta.value=saved;
-    btn.addEventListener('click',function(){
-      storeSet('bday.letter',ta.value);
-      note.textContent=I18N[lang].saved;
-      fxConfetti(46,0.6);
-    });
-  })();
-
-  /* ============================================================
-     Secret message
-     ============================================================ */
-  (function(){
-    var input=$('#secretInput'), btn=$('#secretBtn'), msg=$('#secretMsg');
-    function check(){
-      if(input.value===SETTINGS.secretPass){
-        msg.dataset.unlocked='1';
-        msg.textContent=SETTINGS.secretMessage[lang];
-        input.value='';
-        fxFireworks(2);
-      }else{
-        msg.textContent=I18N[lang].wrongPass;
-        msg.animate(
-          [{transform:'translateX(0)'},{transform:'translateX(-7px)'},
-           {transform:'translateX(7px)'},{transform:'translateX(0)'}],
-          {duration:300}
-        );
-      }
-    }
-    btn.addEventListener('click',check);
-    input.addEventListener('keydown',function(e){ if(e.key==='Enter') check(); });
-  })();
 
   /* ============================================================
      Hero wish button + fireworks finale
@@ -1062,7 +832,7 @@
     }
     btn.addEventListener('click',function(){
       var data={title:'老婆仔 生日快樂',
-                text:'身體健康，屋企人錫我 · Good health, and a family that loves you.',
+                text:'身體健康，屋企人錫我',
                 url:location.href};
       if(navigator.share){
         navigator.share(data).then(function(){say('已開啟分享');}).catch(function(e){
@@ -1077,20 +847,14 @@
   })();
 
   /* ============================================================
-     Chips: music / language / effects
+     Chips: music / effects
      ============================================================ */
   (function(){
-    var mb=$('#musicBtn'), lb=$('#langBtn'), fb=$('#fxBtn');
+    var mb=$('#musicBtn'), fb=$('#fxBtn');
     mb.addEventListener('click',function(){
       var on=musicToggle();
       mb.setAttribute('aria-pressed',String(on));
       $('#musicIco').textContent=on?'♫':'♪';
-    });
-    lb.addEventListener('click',function(){
-      lang = lang==='zh' ? 'en' : 'zh';
-      applyLang();
-      buildBalloons();
-      buildLanterns();
     });
     fb.addEventListener('click',function(){
       fxOn=!fxOn;
@@ -1115,7 +879,6 @@
     }
   })();
 
-  applyLang();
   buildBalloons();
   buildLanterns();
 
